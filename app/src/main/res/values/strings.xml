@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">APPREVISAO</string>
+    <string name="label_string">Digite os valores:</string>
+    <string name="number_1_hint">Number 1</string>
+    <string name="button_label">Testar</string>
+</resources>
