@@ -16,7 +16,16 @@ class MainActivity : AppCompatActivity() {
         var numField2 = findViewById<EditText>(R.id.number_2)
 
         findViewById<Button>(R.id.button).setOnClickListener {
+            var numText1 = numField1.text
+            var numText2 = numField2.text
+
+            if(numText1.isNullOrEmpty() || numText2.isNullOrEmpty()) {
+                Toast.makeText(this, "Preencha os dois campos!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             compareNumbers(
+
                 Integer.parseInt(numField1.text.toString()),
                 Integer.parseInt(numField2.text.toString())
             )
